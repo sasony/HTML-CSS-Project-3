@@ -4,55 +4,100 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: linear-gradient(to top, #b829f5, #5938ea) no-repeat;
+
 }
+
+/* Navigation Bar */
 
 .main-header {
     background-color: #000000;
-    height: 60px;
-    padding: 20px;
+    height: 94px;
+    padding: 31px 83px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .main-header img {
-    width: 80px;
-    margin: 0px 25px;
+    width: 92px;
+    height: 32px;
+}
+
+.line {
+    width: 1px;
+    height: 50px;
+    background-color: #fff;
+    margin-left: 63px;
 }
 
 .navigation {
     flex-grow: 2;
     padding-left: 40px;
-    border-left: 2px solid #b8b8b8;
 }
 
-nav > a {
+nav>a {
     text-decoration: none;
     color: #ffffff;
-    padding: 15px;
+    padding: 28px;
+    font-weight: 600;
 
 }
 
 #buy-btn {
-    padding: 5px 10px;
-    background-color: #b32fd1;
+    padding: 7px 28px;
+    background: #ba0cc5;
+    border-radius: 6px;
     border: none;
-    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
 }
+
+/* Main Section */
 
 .main-section {
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 92vh;
     text-align: center;
-    padding: 10% 0px;
-    line-height: 50px;
+    padding: 12% 0px;
+    line-height: 90px;
 }
 
-@media screen and (max-width: 480px) {
+.main-div h1 {
+    color: #ffffff;
+    font-size: 80px;
+}
+
+.main-div h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#reauest-btn {
+    margin-top: 35px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #ba0cc5;
+    cursor: pointer;
+}
+
+/* For mobile responsive */
+
+/* @media screen and (max-width: 480px) {
     body {
-      background-color: lightgreen;
+        background-color: lightgreen;
     }
 
     .main-header {
@@ -71,4 +116,4 @@ nav > a {
         color: #ffffff;
         margin-top: 10px;
     }
-  }
+} */
